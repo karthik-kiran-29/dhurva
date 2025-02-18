@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import dhurvaAbout from "../../../assets/images/about-images.jpg";
 import "../../../assets/fonts/dmserif.css";
 import "../../../assets/fonts/sourcesans.css";
+import { Link } from "react-router-dom";
 function HeroSection() {
   return (
     <div>
@@ -19,15 +20,19 @@ function HeroSection() {
               performances, theatre showcases, and art exhibitions.
             </p>
             <div className="flex justify-center md:justify-start gap-4">
-              <Button className="p-6 border-b-gray-200 border-b-4 border-2">
-                On Stage
-              </Button>
-              <Button
-                variant="outline"
-                className="p-6 border-2  border-black "
-              >
-                Off Stage
-              </Button>
+              <Link to="onstageevents">
+                  <Button className="p-6 border-b-gray-200 border-b-4 border-2">
+                    On Stage
+                  </Button>
+              </Link>
+              <Link to="offstageevents">
+                  <Button
+                    variant="outline"
+                    className="p-6 border-2  border-black "
+                  >
+                    Off Stage
+                  </Button>
+              </Link>
             </div>
           </div>
 
