@@ -1,11 +1,15 @@
-import React from "react";
+import React,{useEffect} from "react";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 import HeroSection from "./section/HeroSection";
 import ExploreEventsSection from "./Section/ExploreEventsSection";
 import EventsDisplaySection from "./Section/EventsDisplaySection";
 
 const OffStageEvents = ()=>{
-
+  useEffect(()=>{
+    Aos.init();
+  })
 
     const EventData = [
         { id: 1, title: "Solo Dancing", image: "" },

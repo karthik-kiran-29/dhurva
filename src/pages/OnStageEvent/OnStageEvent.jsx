@@ -1,10 +1,15 @@
-import React from "react";
+import React,{useEffect} from "react";
 import HeroSection from "./section/HeroSection";
 import ExploreEventsSection from "./Section/ExploreEventsSection";
 import EventsDisplaySection from "./Section/EventsDisplaySection";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 
 const OnStageEvents = ()=>{
+  useEffect(()=>{
+      Aos.init();
+    })
 
   const EventData = [
     { id: 1, title: "Solo Dancing", image: "" },
