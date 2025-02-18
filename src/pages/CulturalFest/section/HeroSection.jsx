@@ -5,10 +5,20 @@ import dhurvaAbout from "../../../assets/images/about-images.jpg";
 import "../../../assets/fonts/dmserif.css";
 import "../../../assets/fonts/sourcesans.css";
 import { Link } from "react-router-dom";
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+
+
 function HeroSection() {
   return (
     <div>
       <div className="container mx-auto px-4 lg:px-16 py-12 mt-20">
+      <DotLottieReact
+            src="https://lottie.host/498a2066-6026-477d-98ac-3aeeba6e0a27/XoKmLt4lTw.lottie"
+            loop
+            autoplay
+      
+            className="absolute w-full"
+      />
         <div className="flex flex-col-reverse md:flex-row items-center gap-10">
           <div className="w-full md:w-1/2 space-y-6 text-center md:text-left">
             <h1 className="lg:text-5xl text-3xl font-bold text-black dm-serif ">
@@ -56,3 +66,6 @@ function HeroSection() {
 }
 
 export default HeroSection;
+
+
+
